@@ -3,10 +3,7 @@ import React from 'react'
 import { useState, useEffect } from "react"
 const axios = require('axios')
 
-const api = {
-  key: "5cb031d69963aaea82ffdc66f80f63b1",
-  base: "http://api.openweathermap.org/data/2.5/"
-}
+const api = process.env.API
 
 const weatherIcons = {
   Thunderstorm: "wi-thunderstorm",
